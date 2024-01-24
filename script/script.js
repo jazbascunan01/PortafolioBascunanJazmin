@@ -6,7 +6,8 @@ var frases = [
   var animacionTexto = document.getElementById('animacion-texto');
   var indiceFrase = 0;
   var velocidadEscritura = 100; // Ajusta la velocidad de escritura
-  var tiempoEspera = 2000; // Ajusta el tiempo de espera entre frases
+  var tiempoEsperaEscritura = 1000; // Ajusta el tiempo de espera después de escribir una palabra
+  var tiempoEsperaBorrado = 2000; // Ajusta el tiempo de espera antes de borrar la palabra
 
   function realizarAnimacion() {
     var fraseActual = frases[indiceFrase];
@@ -22,8 +23,24 @@ var frases = [
           escribirBorrar(i + 1, longitud, callback);
         } else {
           setTimeout(function () {
+            borrarCaracter(longitud - 1, callback);
+          }, tiempoEsperaEscritura);
+        }
+      }, velocidadEscritura);
+    }
+
+    // Función para manejar el borrado de carácter por carácter
+    function borrarCaracter(i, callback) {
+      setTimeout(function () {
+        var texto = fraseActual.slice(0, i);
+        animacionTexto.textContent = texto;
+
+        if (i > 0) {
+          borrarCaracter(i - 1, callback);
+        } else {
+          setTimeout(function () {
             callback();
-          }, tiempoEspera);
+          }, tiempoEsperaBorrado);
         }
       }, velocidadEscritura);
     }
