@@ -1,0 +1,56 @@
+/* Estilo personalizado para la barra de navegación */
+.navbar {
+    background-color: #343a40; /* Color oscuro */
+    height: 80px; /* Ajusta la altura de la barra de navegación */
+}
+
+.navbar-brand img {
+    max-width: 60px; /* Ajusta el tamaño máximo de la imagen del logo */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #28a745; /* Cambia de color al pasar el mouse */
+}
+
+nav {
+    padding: 0%;
+}
+
+.logo {
+    margin: 1%;
+}
+
+#inicio h1 {
+    font-size: 100px;
+}
+
+#inicio {
+    background-image: url('../images/hacer-curso-carrera-programador.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Color del texto en el div */
+    text-align: center;
+    overflow: hidden; /* Para ocultar el texto que se desborda durante la animación */
+}
+
+#animacion-texto {
+    font-size: 36px;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    border-right: 2px solid #ffffff; /* Simula el cursor de escritura */
+    max-width: min-content;
+    display: inline-block;
+}
