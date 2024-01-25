@@ -53,4 +53,5 @@ nav {
     border-right: 2px solid #ffffff; /* Simula el cursor de escritura */
     max-width: min-content;
     display: inline-block;
+    height: 50px;
 }
