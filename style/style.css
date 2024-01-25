@@ -1,6 +1,9 @@
 /* Estilo personalizado para la barra de navegación */
 .navbar {
-    background-color: #343a40; /* Color oscuro */
+    background-color: #0f2a44;
+    /* background-color: #25394d; */
+    /* background-color: #25303b; */
+    /* background-color: #343a40; */ /* Color oscuro */
     height: 80px; /* Ajusta la altura de la barra de navegación */
 }
 
@@ -54,4 +57,46 @@ nav {
     max-width: min-content;
     display: inline-block;
     height: 50px;
+}
+#sobre-mi {
+    background-color: #3498db;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+  }
+/* #sobre-mi{
+    background-color: #0f2a44;
+    height: max-content;
+}
+ */
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px; /* Ajusta según la separación desde la parte inferior */
+    right: 20px; /* Ajusta según la separación desde la parte derecha */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.config-button,
+.sun-button {
+    margin-bottom: 10px; /* Ajusta el espacio entre los botones */
+}
+.avatar{
+    width: 30%;
+    border-radius: 50%;
+    background-color: #b6c6f9;
+    padding: 2%;
+}
+.seccion_sobre_mi{
+    width: 35%;
+}
+.texto_sobre_mi{
+    text-align: justify;
 }
