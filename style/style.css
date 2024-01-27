@@ -3,31 +3,51 @@
     background-color: #0f2a44;
     /* background-color: #25394d; */
     /* background-color: #25303b; */
-    /* background-color: #343a40; */ /* Color oscuro */
-    height: 80px; /* Ajusta la altura de la barra de navegación */
+    /* background-color: #343a40; */
+    /* Color oscuro */
+    height: 80px;
+    /* Ajusta la altura de la barra de navegación */
+    border-bottom: 4px solid #2671a3;
+    padding: 0%;
 }
 
 .navbar-brand img {
-    max-width: 60px; /* Ajusta el tamaño máximo de la imagen del logo */
+    max-width: 60px;
+    /* Ajusta el tamaño máximo de la imagen del logo */
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: #ffffff; /* Texto blanco */
-    font-size: 18px; /* Tamaño del texto */
+    color: #ffffff;
+    /* Texto blanco */
+    font-size: 18px;
+    /* Tamaño del texto */
 }
 
-.navbar-brand:hover,
+
 .navbar-nav .nav-link:hover {
-    color: #28a745; /* Cambia de color al pasar el mouse */
+    background-color: #2671a3;
+    color: #28a745;
+    /* Cambia de color al pasar el mouse */
+}
+
+.nav-link {
+    padding: 16px 8px 16px 8px;
+    margin: 0%;
+    border: 0%;
 }
 
 nav {
     padding: 0%;
 }
 
+.navbar-nav ml-auto {
+    margin: 0%;
+}
+
 .logo {
     margin: 1%;
+    height: 90%;
 }
 
 #inicio h1 {
@@ -43,21 +63,27 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #ffffff; /* Color del texto en el div */
+    color: #ffffff;
+    /* Color del texto en el div */
     text-align: center;
-    overflow: hidden; /* Para ocultar el texto que se desborda durante la animación */
+    overflow: hidden;
+    /* Para ocultar el texto que se desborda durante la animación */
 }
 
 #animacion-texto {
     font-size: 36px;
     margin-bottom: 20px;
-    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    border-right: 2px solid #ffffff; /* Simula el cursor de escritura */
+    white-space: nowrap;
+    /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    border-right: 2px solid #ffffff;
+    /* Simula el cursor de escritura */
     max-width: min-content;
     display: inline-block;
     height: 50px;
 }
+
 #sobre-mi {
     background-color: #3498db;
     margin: 0;
@@ -68,7 +94,8 @@ nav {
     flex-direction: row;
     color: white;
     justify-content: space-evenly;
-  }
+}
+
 /* #sobre-mi{
     background-color: #0f2a44;
     height: max-content;
@@ -77,26 +104,235 @@ nav {
 
 .fixed-buttons {
     position: fixed;
-    bottom: 20px; /* Ajusta según la separación desde la parte inferior */
-    right: 20px; /* Ajusta según la separación desde la parte derecha */
+    bottom: 20px;
+    /* Ajusta según la separación desde la parte inferior */
+    right: 20px;
+    /* Ajusta según la separación desde la parte derecha */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .config-button,
 .sun-button {
-    margin-bottom: 10px; /* Ajusta el espacio entre los botones */
+    margin-bottom: 10px;
+    /* Ajusta el espacio entre los botones */
+    width: 10%;
 }
-.avatar{
+
+.avatar {
     width: 30%;
     border-radius: 50%;
     background-color: #b6c6f9;
     padding: 2%;
 }
-.seccion_sobre_mi{
+
+.seccion_sobre_mi {
     width: 35%;
 }
-.texto_sobre_mi{
+
+.texto_sobre_mi {
     text-align: justify;
+}
+
+#habilidades {
+    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
+    color: white;
+}
+
+h2 {
+    padding: 2%;
+    font-size: xx-large;
+}
+
+#habilidades h2, .contacto h2,#proyectos h2{
+    text-align: center;
+}
+
+.logos_habilidades {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuye uniformemente los elementos dentro del contenedor */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a una nueva línea si no hay suficiente espacio */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distribuye uniformemente las imágenes dentro de cada "menu" */
+    width: 100%;
+    /* Asegura que el ancho del "menu" sea el 100% del contenedor padre */
+    margin-bottom: 1.5%;
+    /* Agrega un espacio entre conjuntos de imágenes */
+    margin-top: 1.5%;
+}
+
+.foto_menu {
+    width: 10%;
+    object-fit: contain;
+}
+
+#proyectos {
+    background-color: #3498db;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#mis_proyectos {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distribuye uniformemente las imágenes dentro de cada "menu" */
+    width: 100%;
+    /* Asegura que el ancho del "menu" sea el 100% del contenedor padre */
+    margin-bottom: 1.5%;
+    /* Agrega un espacio entre conjuntos de imágenes */
+    margin-top: 1.5%;
+    flex-direction: row;
+}
+.menu_proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.proyecto {
+    width: 30%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    align-items: center;
+    border-radius: 5%;
+}
+.img_proyect{
+    width:95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-radius: 2%;
+}
+.color {
+    /* color: #b90303; */
+    color: #294cad;
+}
+.descripcion_proyecto{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.botones_proyectos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.btn_proy{
+    margin: 2.5%;
+}
+button {
+    /*Buttons de las páginas ADMINISTRADOR,CONTACTO, OFERTA y TURNOS*/
+    background-color: #356d7c;
+    border-radius: 10px;
+    color: white;
+    border-color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #19213e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+}
+.img_button{
+    width: 80%;
+}
+.contenedor {
+    /*Gran contenedor para los forms de cada página*/
+    width: 70%;
+    padding: 30px;
+    background: #2e3f4f;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+.contenedor#contacto {
+    /*Pagina CONTACTO*/
+    width: 40%;
+    margin: 3%;
+}
+.datos_form {
+    /* Sections de la página CONTACTO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    /*Inputs de las páginas ADMINISTRADOR, CONTACTO y TURNOS*/
+    width: 100%;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    font-size: small;
+}
+#form_cargar_datos {
+    /*Formulario de ADMINISTRADOR y CONTACTO*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form_cargar_datos #botonEnviar {
+    /*Botón enviar del formulario de ADMINISTRADOR y CONTACTO*/
+    font-size: medium;
+    width: 100%;
+}
+
+#form_cargar_datos #botonGuardar {
+    /*Botón para guardar después de editar*/
+    font-size: medium;
+    width: 50%;
+}
+textarea {
+    /* Para la página de ADMINISTRADOR y CONTACTO */
+    width: 100%;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90px;
+}
+.ubicacion {
+    /* Sección para el maps de la página CONTACTO */
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    width: 50%;
+}
+
+#map {
+    /* Div contenedor del mapa de la página CONTACTO */
+    height: 100%;
+    width: 95%;
+}
+.contacto{
+    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
+    color: white;
+}
+.cont_contacto{
+    color: white;
+    display: flex;
+    flex-direction: row;
 }
