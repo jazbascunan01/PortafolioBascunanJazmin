@@ -35,8 +35,8 @@ El proyecto sigue una estructura organizada en carpetas:
 
 Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, ¡no dudes en contactarme!
 
-- GitHub: [TuUsuario](https://github.com/jazbascunan01)
-- LinkedIn: [TuPerfilLinkedIn](https://www.linkedin.com/in/Jazmin-Bascunan/)
-- Correo Electrónico: [tu.correo@ejemplo.com](mailto:tu.jazbascunan01@gmail.com)
+- GitHub: [JazminBascuñan](https://github.com/jazbascunan01)
+- LinkedIn: [JazminBascuñan](https://www.linkedin.com/in/Jazmin-Bascunan/)
+- Correo Electrónico: [jazbascunan01@gmail.com](mailto:tu.jazbascunan01@gmail.com)
 
 ¡Gracias por visitar mi portafolio! Espero que encuentres la información interesante y útil.
