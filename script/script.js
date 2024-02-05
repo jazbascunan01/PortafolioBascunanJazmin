@@ -108,6 +108,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+
+    scrollToTopButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const currentPosition = window.scrollY || window.pageYOffset;
+        const targetPosition = 0;
+        const distance = targetPosition - currentPosition;
+        const duration = 1000;
+
+        smoothScrollTo(distance, duration);
+    });
+
+    function smoothScrollTo(targetY, duration) {
+        const initialY = window.scrollY || window.pageYOffset;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+        function animateScroll() {
+            const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const elapsed = currentTime - startTime;
+
+            const easeInOutCubic = function (t) {
+                t /= duration / 2;
+                if (t < 1) return 1 / 2 * t * t * t;
+                t -= 2;
+                return 1 / 2 * (t * t * t + 2);
+            };
+
+            window.scrollTo(0, initialY + targetY * easeInOutCubic(elapsed));
+
+            if (elapsed < duration) {
+                requestAnimationFrame(animateScroll);
+            }
+        }
+
+        animateScroll();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 /*     var wow = new WOW({
         reset: true, // Reinicia las animaciones en el desplazamiento hacia arriba
