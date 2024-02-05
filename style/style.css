@@ -84,7 +84,18 @@ nav {
     height: 50px;
 }
 
-#sobre-mi {
+#sobre-mi, .sobre-mi {
+    background-color: #3498db;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+}
+.sobre-mi{
     background-color: #3498db;
     margin: 0;
     background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
@@ -94,6 +105,8 @@ nav {
     flex-direction: row;
     color: white;
     justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 }
 
 /* #sobre-mi{
@@ -147,7 +160,9 @@ h2 {
     font-size: xx-large;
 }
 
-#habilidades h2, .contacto h2,#proyectos h2{
+#habilidades h2,
+.contacto h2,
+#proyectos h2 {
     text-align: center;
 }
 
@@ -197,11 +212,13 @@ h2 {
     margin-top: 1.5%;
     flex-direction: row;
 }
-.menu_proyectos{
+
+.menu_proyectos {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .proyecto {
     width: 30%;
     object-fit: contain;
@@ -212,29 +229,35 @@ h2 {
     align-items: center;
     border-radius: 5%;
 }
-.img_proyect{
-    width:95%;
+
+.img_proyect {
+    width: 95%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     border-radius: 2%;
 }
+
 .color {
     /* color: #b90303; */
     color: #294cad;
 }
-.descripcion_proyecto{
+
+.descripcion_proyecto {
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
-.botones_proyectos{
+
+.botones_proyectos {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
 }
-.btn_proy{
+
+.btn_proy {
     margin: 2.5%;
 }
+
 button {
     /*Buttons de las páginas ADMINISTRADOR,CONTACTO, OFERTA y TURNOS*/
     background-color: #356d7c;
@@ -242,14 +265,17 @@ button {
     color: white;
     border-color: white;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     background-color: #19213e;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
 }
-.img_button{
+
+.img_button {
     width: 80%;
 }
+
 .contenedor {
     /*Gran contenedor para los forms de cada página*/
     width: 70%;
@@ -264,17 +290,20 @@ button:hover{
     box-shadow: 7px 13px 37px #000;
 
 }
+
 .contenedor#contacto {
     /*Pagina CONTACTO*/
     width: 40%;
     margin: 3%;
 }
+
 .datos_form {
     /* Sections de la página CONTACTO */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 input {
     /*Inputs de las páginas ADMINISTRADOR, CONTACTO y TURNOS*/
     width: 100%;
@@ -284,6 +313,7 @@ input {
     border-radius: 5px;
     font-size: small;
 }
+
 #form_cargar_datos {
     /*Formulario de ADMINISTRADOR y CONTACTO*/
     display: flex;
@@ -302,6 +332,7 @@ input {
     font-size: medium;
     width: 50%;
 }
+
 textarea {
     /* Para la página de ADMINISTRADOR y CONTACTO */
     width: 100%;
@@ -313,6 +344,7 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
     height: 90px;
 }
+
 .ubicacion {
     /* Sección para el maps de la página CONTACTO */
     display: flex;
@@ -326,13 +358,89 @@ textarea {
     height: 100%;
     width: 95%;
 }
-.contacto{
+
+.contacto {
     background-image: linear-gradient(to bottom right, #4b6287, #020137);
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
 }
-.cont_contacto{
+
+.cont_contacto {
     color: white;
     display: flex;
     flex-direction: row;
 }
+
+.footer {
+    background-color: #0f2a44;
+    color: #ffffff;
+    padding: 40px 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon img {
+    width: 30px;
+}
+
+.back-to-top {
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+}
+
+.back-to-top img {
+    width: 60px;
+    cursor: pointer;
+}
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #22ae92;
+    border-radius: 5px;
+}
+
+/* body{
+    background-color: #0f2a44;
+} */
+
+body {
+    overflow-x: hidden;
+}
+.logo{
+    transition: transform 0.3s, filter 0.3s;
+}
+.logo:hover {
+    transform: scale(1.5); /* agranda la imagen al hacer hover */
+    filter: brightness(1.5); /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* agrega un resplandor blanco al hacer hover */
+}
+
+/* /* /* /* /* Añade estilos de animación para las secciones y el footer */
+/* Añade estilos de animación para los artículos */
+/* article {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+article.animate {
+    opacity: 1;
+    transform: translateY(0); 
+} */
+
+/* Ajusta otros estilos según tus preferencias   */

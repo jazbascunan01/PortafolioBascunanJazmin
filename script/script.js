@@ -62,3 +62,28 @@ function pagina_mapa() {
     L.marker([-38.55565, -58.75411]).addTo(map);
 }
 pagina_mapa();
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+/*     var wow = new WOW({
+        reset: true, // Reinicia las animaciones en el desplazamiento hacia arriba
+    });
+    wow.init();
+
+    // Configura la detección de scroll para reiniciar las animaciones en el desplazamiento hacia arriba
+    window.addEventListener('scroll', function () {
+        if (window.scrollY === 0) {
+            wow = new WOW(); // Crea una nueva instancia de WOW
+            wow.init(); // Inicializa las animaciones
+        }
+    }); */
+        AOS.init();
+
+});
+
+

@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="images/images/image (2)edit.png">
     <title>Portafolio de Jazmin Bascuñan</title>
+    <link rel="stylesheet" href="style/animate.css">
     <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--api de leflet-->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin="">
         </script>
-    
+    <script src="script/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
@@ -54,64 +58,71 @@
     </nav>
 
 
-    <article id="inicio">
+    <article class="animate__animated animate__fadeIn" id="inicio">
         <div class="nombre">
-            <h1><span class="color">&lt;</span>Jazmín Bascuñan<span class="color">&sol;&gt;</span></h1>
+            <h1 class="animate__animated animate__zoomInDown"><span class="color">&lt;</span>Jazmín Bascuñan<span
+                    class="color">&sol;&gt;</span></h1>
         </div>
 
-        <div id="animacion-texto"></div>
+        <div id="animacion-texto" class="animate__animated animate__bounceIn"></div>
     </article>
     <article id="sobre-mi">
-        <img class="avatar" src="images/myAvatar.png" alt="">
-        <section class="seccion_sobre_mi">
-            <h2>Soy Jazmín Bascuñan</h2>
-            <h5 class="texto_sobre_mi">Soy estudiante de la Tecnicatura Universitaria en Desarrollo de Aplicaciones
-                Informáticas, con un sólido título en Técnico en Informática Personal y Profesional. Mi fascinación por
-                la tecnología me impulsa a explorar constantemente nuevos horizontes y aprender de manera continua.
-                Desde el inicio de mi trayectoria académica, he estado inmersa en el mundo de la informática, buscando
-                siempre desafíos que me permitan crecer y aplicar mis conocimientos. Mi compromiso con el desarrollo de
-                aplicaciones y el entusiasmo por la innovación tecnológica me motivan a superar obstáculos y afrontar
-                nuevos proyectos con determinación. ¡Bienvenido a mi espacio digital, donde la pasión por la tecnología
-                se fusiona con el deseo constante de aprender y crecer!</h5>
-        </section>
-
+        <div data-aos="flip-left" class="aos-init aos-animate sobre-mi">
+            <img class="avatar" src="images/myAvatar.png" alt="">
+            <section class="seccion_sobre_mi">
+                <h2>Soy Jazmín Bascuñan</h2>
+                <h5 class="texto_sobre_mi">Soy estudiante de la Tecnicatura Universitaria en Desarrollo de Aplicaciones
+                    Informáticas, con un sólido título en Técnico en Informática Personal y Profesional. Mi fascinación
+                    por
+                    la tecnología me impulsa a explorar constantemente nuevos horizontes y aprender de manera continua.
+                    Desde el inicio de mi trayectoria académica, he estado inmersa en el mundo de la informática,
+                    buscando
+                    siempre desafíos que me permitan crecer y aplicar mis conocimientos. Mi compromiso con el desarrollo
+                    de
+                    aplicaciones y el entusiasmo por la innovación tecnológica me motivan a superar obstáculos y
+                    afrontar
+                    nuevos proyectos con determinación. ¡Bienvenido a mi espacio digital, donde la pasión por la
+                    tecnología
+                    se fusiona con el deseo constante de aprender y crecer!</h5>
+            </section>
+        </div>
     </article>
     <article id="habilidades">
         <h2>Habilidades:</h2>
         <section class="logos_habilidades">
             <div class="menu">
-                <img class="foto_menu" src="images/HTML5_logo_and_wordmark.svg.png" alt="">
-                <img class="foto_menu" src="images/css-logo.png" alt="">
-                <img class="foto_menu" src="images/javascript-logo-javascript-icon-transparent-free-png.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/HTML5_logo_and_wordmark.svg.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/css-logo.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/javascript-logo-javascript-icon-transparent-free-png.png" alt="">
             </div>
             <div class="menu">
-                <img class="foto_menu" src="images/58480979cef1014c0b5e4901.png" alt="">
-                <img class="foto_menu" src="images/PHP-logo.svg.png" alt="">
-                <img class="foto_menu" src="images/smartytransparente.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/58480979cef1014c0b5e4901.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/PHP-logo.svg.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/smartytransparente.png" alt="">
             </div>
             <div class="menu">
-                <img class="foto_menu" src="images/Git-Icon-1788C.png" alt="">
-                <img class="foto_menu" src="images/25231.png" alt="">
-                <img class="foto_menu" src="images/gitlab-logo-757620E430-seeklogo.com.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/Git-Icon-1788C.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/25231.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/gitlab-logo-757620E430-seeklogo.com.png" alt="">
             </div>
             <div class="menu">
-                <img class="foto_menu" src="images/trello-logo-CE7B690E34-seeklogo.com.png" alt="">
-                <img class="foto_menu" src="images/Drawio.png" alt="">
-                <img class="foto_menu" src="images/Jira_Logo.svg.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/trello-logo-CE7B690E34-seeklogo.com.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/Drawio.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/Jira_Logo.svg.png" alt="">
             </div>
             <div class="menu">
-                <img class="foto_menu" src="images/bootstrap-logo-vector.svg" alt="">
-                <img class="foto_menu" src="images/Vue.png" alt="">
-                <img class="foto_menu" src="images/laravel-icon-497x512-uwybstke.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/bootstrap-logo-vector.svg" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/Vue.png" alt="">
+                <img data-aos="zoom-in-up" class="foto_menu" src="images/laravel-icon-497x512-uwybstke.png" alt="">
             </div>
         </section>
     </article>
 
-    <article id="proyectos">
+    <article  id="proyectos">
         <h2>Mis proyectos:</h2>
         <section class="mis_proyectos"></section>
         <div class="menu_proyectos">
-            <div class="proyecto">
+            <div data-aos="zoom-out"  class="proyecto">
                 <img class="img_proyect"
                     src="images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg" alt="">
                 <p class="descripcion_proyecto">Proyecto de sistema web informativo de tours en cruceros, se utilizó
@@ -121,7 +132,7 @@
                     <button class="btn_proy">Código</button>
                 </div>
             </div>
-            <div class="proyecto">
+            <div data-aos="zoom-out"  class="proyecto">
                 <img class="img_proyect"
                     src="images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg" alt="">
                 <p class="descripcion_proyecto">Proyecto de sistema web informativo de tours en cruceros, se utilizó
@@ -165,6 +176,20 @@
             </section>
         </article>
     </article>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-icons">
+                <a href="URL_DE_GITHUB" target="_blank" class="footer-icon"><img class="logo" src="images/github.png"
+                        alt="GitHub"></a>
+                <a href="URL_DE_LINKEDIN" target="_blank" class="footer-icon"><img class="logo" src="images/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="mailto:TU_CORREO@EJEMPLO.COM" class="footer-icon"><img class="logo" src="images/gmail.png" alt="Email"></a>
+            </div>
+            <div class="back-to-top">
+                <a href="#inicio"><img src="images/flecha.png" alt="Volver Arriba"></a>
+            </div>
+        </div>
+    </footer>
     <div class="fixed-buttons">
         <button class="config-button"><img class="img_button" src="images/6002fa9051c2ec00048c6c7a.png" alt=""></button>
         <button class="sun-button">☀</button>
