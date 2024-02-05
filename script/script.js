@@ -69,6 +69,45 @@ pagina_mapa();
 
 
 
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtiene todas las imágenes con la clase foto_menu
+    const hoverImages = document.querySelectorAll('.foto_menu');
+
+    // Agrega un evento de mouseover para cada imagen
+    hoverImages.forEach(img => {
+        img.addEventListener('mouseover', function () {
+            // Agranda la imagen al hacer hover
+            this.style.transform = 'scale(1.5)';
+/*             // Resalta la imagen al hacer hover
+            this.style.filter = 'brightness(1.5)';
+            // Agrega un resplandor blanco alrededor del borde al hacer hover
+            this.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.7)'; */
+        });
+
+        // Agrega un evento de mouseout para cada imagen
+        img.addEventListener('mouseout', function () {
+            // Restaura los estilos originales al salir del hover
+            this.style.transform = '';
+            this.style.filter = '';
+            this.style.boxShadow = '';
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 /*     var wow = new WOW({
         reset: true, // Reinicia las animaciones en el desplazamiento hacia arriba

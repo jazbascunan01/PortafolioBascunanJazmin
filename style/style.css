@@ -188,6 +188,7 @@ h2 {
 .foto_menu {
     width: 10%;
     object-fit: contain;
+    transition: transform 3s, filter 3s, box-shadow 3s; /* agrega una transición suave */
 }
 
 #proyectos {
@@ -397,11 +398,14 @@ textarea {
     position: absolute;
     top: 0%;
     transform: translateY(-50%);
+
 }
 
 .back-to-top img {
     width: 60px;
     cursor: pointer;
+    transition: transform 0.5s, filter 0.5s;
+    border-radius: 50%;
 }
 
 
@@ -422,14 +426,23 @@ body {
     overflow-x: hidden;
 }
 .logo{
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.5s, filter 0.5s;
 }
 .logo:hover {
     transform: scale(1.5); /* agranda la imagen al hacer hover */
     filter: brightness(1.5); /* resalta la imagen al hacer hover */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* agrega un resplandor blanco al hacer hover */
 }
-
+.back-to-top img:hover{
+    transform: scale(125%); /* agranda la imagen al hacer hover */
+    filter: brightness(1.5); /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* agrega un resplandor blanco al hacer hover */
+}
+/* .foto_menu:hover {
+    transform: scale(2); /* agranda la imagen al hacer hover */
+    /* filter: brightness(1.5); /* resalta la imagen al hacer hover */
+   /*  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);  */ /* agrega un resplandor blanco al hacer hover */
+/* } */ 
 /* /* /* /* /* Añade estilos de animación para las secciones y el footer */
 /* Añade estilos de animación para los artículos */
 /* article {
