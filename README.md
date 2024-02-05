@@ -1,4 +1,4 @@
-# Portafolio de Jazmín Bascuñan 🚀
+# Portafolio de Jazmín Bascuñan 💼
 
 ¡Bienvenido/a a mi portafolio web! Este repositorio contiene el código fuente y archivos relacionados con la implementación de mi sitio web personal.
 
