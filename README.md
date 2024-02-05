@@ -1,4 +1,4 @@
-# Portafolio de Jazmín Bascuñan
+# Portafolio de Jazmín Bascuñan 🚀
 
 ¡Bienvenido/a a mi portafolio web! Este repositorio contiene el código fuente y archivos relacionados con la implementación de mi sitio web personal.
 
@@ -15,7 +15,7 @@
 - **jQuery**
 - Otros recursos como FontAwesome y Typed.js
 
-## Estructura del Proyecto
+## Estructura del Proyecto 📂
 
 La organización del proyecto se divide en carpetas:
 
@@ -24,7 +24,7 @@ La organización del proyecto se divide en carpetas:
 - `/script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
 - `/assets`: Recursos adicionales, como `typed.js` para efectos de escritura.
 
-## Secciones Principales
+## Secciones Principales 🌐
 
 1. **Inicio**: Presentación animada con mi nombre.
 2. **Sobre Mí**: Información detallada sobre mi perfil y trayectoria académica.
@@ -32,7 +32,7 @@ La organización del proyecto se divide en carpetas:
 4. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
 5. **Contacto**: Formulario de contacto y ubicación en un mapa.
 
-## Contacto
+## Contacto 📬
 
 Para cualquier consulta, sugerencia o colaboración, no dudes en contactarme:
 
