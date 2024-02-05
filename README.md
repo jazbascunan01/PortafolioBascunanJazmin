@@ -32,6 +32,7 @@ La organización del proyecto se divide en carpetas:
 4. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
 5. **Contacto**: Formulario de contacto y ubicación en un mapa.
 
+
 ## Contacto 📬
 
 Para cualquier consulta, sugerencia o colaboración, no dudes en contactarme:
