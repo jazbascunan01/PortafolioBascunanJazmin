@@ -1,3 +1,27 @@
+<style>
+  body {
+    background-color: #f8f9fa; /* Color de fondo suave */
+    color: #495057; /* Color de texto oscuro */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #007bff; /* Color de los títulos */
+  }
+
+  a {
+    color: #007bff; /* Color de los enlaces */
+  }
+
+  a:hover {
+    color: #0056b3; /* Color del enlace al pasar el mouse */
+  }
+
+  .container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto;
+  }
+</style>
+
 # Portafolio de Jazmín Bascuñan 💼
 
 ¡Bienvenido/a a mi portafolio web! Este repositorio contiene el código fuente y archivos relacionados con la implementación de mi sitio web personal.
@@ -22,7 +46,6 @@ La organización del proyecto se divide en carpetas:
 - `/images`: Recursos multimedia.
 - `/style`: Archivos CSS, incluyendo `style.css` y `animate.css`.
 - `/script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
-- `/assets`: Recursos adicionales, como `typed.js` para efectos de escritura.
 
 ## Secciones Principales 🌐
 
@@ -31,7 +54,6 @@ La organización del proyecto se divide en carpetas:
 3. **Habilidades**: Desglose de habilidades técnicas con logos representativos.
 4. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
 5. **Contacto**: Formulario de contacto y ubicación en un mapa.
-
 
 ## Contacto 📬
 
