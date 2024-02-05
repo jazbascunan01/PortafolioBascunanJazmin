@@ -22,7 +22,6 @@ El proyecto sigue una estructura organizada en carpetas:
 - `images`: Contiene las imágenes utilizadas en el sitio.
 - `style`: Archivos CSS, incluyendo `style.css` y `animate.css`.
 - `script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
-- `assets`: Recursos adicionales, como `typed.js` para efectos de escritura.
 
 ## Secciones Principales del Sitio
 
