@@ -1,39 +1,40 @@
 # Portafolio de Jazmín Bascuñan
 
-Bienvenido/a a mi portafolio web, un espacio digital que muestra mi trayectoria, habilidades y proyectos destacados. Este repositorio contiene el código fuente y los archivos relacionados con la implementación del sitio.
+¡Bienvenido/a a mi portafolio web! Este repositorio alberga el código fuente y archivos relacionados con la implementación de mi sitio web personal.
 
 ## Tecnologías Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 4
-- Leaflet (para la integración de mapas)
-- AOS (Animate On Scroll para animaciones)
-- GSAP (GreenSock Animation Platform)
-- FormSubmit (para el formulario de contacto)
-- jQuery
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 4**
+- **Leaflet** (para mapas)
+- **AOS** (Animate On Scroll)
+- **GSAP** (GreenSock Animation Platform)
+- **FormSubmit** (formulario de contacto)
+- **jQuery**
 - Otros recursos como FontAwesome y Typed.js
 
 ## Estructura del Proyecto
 
-El proyecto sigue una estructura organizada en carpetas:
+La organización del proyecto se divide en carpetas:
 
-- `images`: Contiene las imágenes utilizadas en el sitio.
-- `style`: Archivos CSS, incluyendo `style.css` y `animate.css`.
-- `script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
+- `/images`: Recursos multimedia.
+- `/style`: Archivos CSS, incluyendo `style.css` y `animate.css`.
+- `/script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
+- `/assets`: Recursos adicionales, como `typed.js` para efectos de escritura.
 
-## Secciones Principales del Sitio
+## Secciones Principales
 
 1. **Inicio**: Presentación animada con mi nombre.
-2. **Sobre Mí**: Información detallada sobre mi perfil, estudios y pasión por la tecnología.
-3. **Habilidades**: Desglose de mis habilidades técnicas con logos representativos.
+2. **Sobre Mí**: Información detallada sobre mi perfil y trayectoria académica.
+3. **Habilidades**: Desglose de habilidades técnicas con logos representativos.
 4. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
 5. **Contacto**: Formulario de contacto y ubicación en un mapa.
 
 ## Contacto
 
-Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, ¡no dudes en contactarme!
+Para cualquier consulta, sugerencia o colaboración, no dudes en contactarme:
 
 - GitHub: [JazminBascuñan](https://github.com/jazbascunan01)
 - LinkedIn: [JazminBascuñan](https://www.linkedin.com/in/Jazmin-Bascunan/)
