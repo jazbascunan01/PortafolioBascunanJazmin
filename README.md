@@ -1,26 +1,3 @@
-<style>
-  body {
-    background-color: #f8f9fa; /* Color de fondo suave */
-    color: #495057; /* Color de texto oscuro */
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: #007bff; /* Color de los títulos */
-  }
-
-  a {
-    color: #007bff; /* Color de los enlaces */
-  }
-
-  a:hover {
-    color: #0056b3; /* Color del enlace al pasar el mouse */
-  }
-
-  .container {
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto;
-  }
-</style>
 
 # Portafolio de Jazmín Bascuñan 💼
 
