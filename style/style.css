@@ -393,6 +393,9 @@ textarea {
 .footer-icon img {
     width: 30px;
 }
+.git{
+    border-radius: 50%;
+}
 
 .back-to-top {
     position: absolute;
