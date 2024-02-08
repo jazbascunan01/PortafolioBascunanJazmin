@@ -24,9 +24,20 @@
     /* Tamaño del texto */
 }
 
+.navbar-nav .nav-link {
+    transition: transform 3s, filter 3s;
+    border-radius: 5px;
+}
 
 .navbar-nav .nav-link:hover {
-    background-color: #2671a3;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    background-color: rgb(22, 44, 59);
+    /* background-color: #2671a3; */
+    transform: scale(1.1);
+    /* agranda la imagen al hacer hover */
+    filter: brightness(1.5);
+    /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
     color: #28a745;
     /* Cambia de color al pasar el mouse */
 }
@@ -84,7 +95,8 @@ nav {
     height: 50px;
 }
 
-#sobre-mi, .sobre-mi {
+#sobre-mi,
+.sobre-mi {
     background-color: #3498db;
     margin: 0;
     background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
@@ -95,7 +107,8 @@ nav {
     color: white;
     justify-content: space-evenly;
 }
-.sobre-mi{
+
+.sobre-mi {
     background-color: #3498db;
     margin: 0;
     background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
@@ -150,7 +163,8 @@ nav {
 }
 
 #habilidades {
-    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    background-image: linear-gradient(to bottom right, #2b384e, #020137);
+    /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
 }
@@ -162,7 +176,8 @@ h2 {
 
 #habilidades h2,
 .contacto h2,
-#proyectos h2 {
+#proyectos h2,
+.educacion h2 {
     text-align: center;
 }
 
@@ -188,7 +203,8 @@ h2 {
 .foto_menu {
     width: 10%;
     object-fit: contain;
-    transition: transform 3s, filter 3s, box-shadow 3s; /* agrega una transición suave */
+    transition: transform 3s, filter 3s, box-shadow 3s;
+    /* agrega una transición suave */
 }
 
 #proyectos {
@@ -372,6 +388,143 @@ textarea {
     flex-direction: row;
 }
 
+
+.educacion {
+    background-color: #212333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.educacion .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.educacion .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.educacion .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.educacion .fila .izq {
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.educacion .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #2c3b47;
+    position: relative;
+}
+
+.educacion .fila .derecha {
+    border-left: 0px solid #252A2E;
+}
+
+.educacion .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.educacion .fila .item .conectord {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.educacion .fila .item .conectori {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.educacion .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.educacion .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.educacion .fila .der {
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+.educacion .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.educacion .fila .item .fecha {
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+.educacion .fila .item .casa {
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     background-color: #0f2a44;
     color: #ffffff;
@@ -393,7 +546,8 @@ textarea {
 .footer-icon img {
     width: 30px;
 }
-.git{
+
+.git {
     border-radius: 50%;
 }
 
@@ -428,24 +582,35 @@ body::-webkit-scrollbar-thumb {
 body {
     overflow-x: hidden;
 }
-.logo{
+
+.logo {
     transition: transform 0.5s, filter 0.5s;
 }
+
 .logo:hover {
-    transform: scale(1.5); /* agranda la imagen al hacer hover */
-    filter: brightness(1.5); /* resalta la imagen al hacer hover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* agrega un resplandor blanco al hacer hover */
+    transform: scale(1.5);
+    /* agranda la imagen al hacer hover */
+    filter: brightness(1.5);
+    /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* agrega un resplandor blanco al hacer hover */
 }
-.back-to-top img:hover{
-    transform: scale(125%); /* agranda la imagen al hacer hover */
-    filter: brightness(1.5); /* resalta la imagen al hacer hover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* agrega un resplandor blanco al hacer hover */
+
+.back-to-top img:hover {
+    transform: scale(125%);
+    /* agranda la imagen al hacer hover */
+    filter: brightness(1.5);
+    /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* agrega un resplandor blanco al hacer hover */
 }
+
 /* .foto_menu:hover {
     transform: scale(2); /* agranda la imagen al hacer hover */
-    /* filter: brightness(1.5); /* resalta la imagen al hacer hover */
-   /*  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);  */ /* agrega un resplandor blanco al hacer hover */
-/* } */ 
+/* filter: brightness(1.5); /* resalta la imagen al hacer hover */
+/*  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);  */
+/* agrega un resplandor blanco al hacer hover */
+/* } */
 /* /* /* /* /* Añade estilos de animación para las secciones y el footer */
 /* Añade estilos de animación para los artículos */
 /* article {
