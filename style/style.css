@@ -616,8 +616,22 @@ article.animate {
 
 /* Ajusta otros estilos según tus preferencias   */
 
+@media screen and (min-width: 400px) {
+    #inicio h1 {
+        font-size: 35px;
+    }
 
+}
 
+@media screen and (min-width: 450px) {
+    #inicio h1 {
+        font-size: 45px;
+    }
+    #animacion-texto {
+        font-size: 20px;
+        height: 30px;
+    }
+}
 
 
 
@@ -713,8 +727,10 @@ article.animate {
 
 
 
-
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 640px) {
+    .ocultar {
+        display: block;
+    }
 
     /* Estilo personalizado para la barra de navegación */
     .navbar {
@@ -780,7 +796,7 @@ article.animate {
     }
 
     #inicio h1 {
-        font-size: 100px;
+        font-size: 60px;
     }
 
     #inicio {
@@ -1318,4 +1334,27 @@ article.animate {
 } */
 
     /* Ajusta otros estilos según tus preferencias   */
+}
+@media screen and (min-width: 1100px){
+#inicio h1 {
+    font-size: 100px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: larger;
+}
+.educacion .fila .item .casa {
+    font-size: 13px;
+}
+.educacion .fila .item .fecha {
+    font-size: 13px;
+}
+p {
+    font-size: medium;
+}
+.ubicacion {
+    height: 400px;
+}
 }
