@@ -1,6 +1,7 @@
 /* Estilo personalizado para la barra de navegación */
 .navbar {
-    background-color: #0f2a44;
+    background-color: #242637;
+    /* background-color: #0f2a44; */
     /* background-color: #25394d; */
     /* background-color: #25303b; */
     /* background-color: #343a40; */
@@ -548,7 +549,11 @@ textarea {
 }
 
 .footer {
-    background-color: #0f2a44;
+    /* background-color: #242937; */
+    background-color: #2e3f3f;
+    background-color: #242637;
+    /* box-shadow: 0 0 5px rgb(144 162 166 / 70%); */
+    box-shadow: 0 0 5px rgb(50 255 230 / 70%);
     color: #ffffff;
     padding: 40px 0;
     position: relative;
@@ -1197,7 +1202,6 @@ article.animate {
     }
 
     .footer {
-        background-color: #0f2a44;
         color: #ffffff;
         padding: 40px 0;
         position: relative;

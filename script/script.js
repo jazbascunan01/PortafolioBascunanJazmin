@@ -181,5 +181,30 @@ document.addEventListener("DOMContentLoaded", function () {
         AOS.init();
 
 });
-
+$(document).ready(function () {
+    // Función para resaltar automáticamente el artículo activo
+    function highlightActiveArticle() {
+        // Obtén la posición actual del scroll vertical
+        var currentPosition = $(window).scrollTop();
+        
+        // Itera sobre cada artículo de la página
+        $("article").each(function () {
+            var articleTop = $(this).offset().top;
+            var articleId = $(this).attr("id");
+            
+            // Si el artículo está en la parte superior de la página y su parte inferior está por debajo del scroll actual,
+            // entonces marca el enlace de la barra de navegación correspondiente como activo
+            if (articleTop <= currentPosition && articleTop + $(this).height() > currentPosition) {
+                $(".navbar-nav .nav-item").removeClass("active"); // Elimina la clase 'active' de todos los elementos de la barra de navegación
+                $(".navbar-nav .nav-item a[href='#" + articleId + "']").parent().addClass("active"); // Agrega la clase 'active' al elemento de la barra de navegación correspondiente
+            }
+        });
+    }
+    
+    // Llama a la función para resaltar el artículo activo cuando se desplaza la página
+    $(window).scroll(highlightActiveArticle);
+    
+    // Llama a la función al cargar la página para resaltar el artículo activo inicialmente
+    highlightActiveArticle();
+});
 
