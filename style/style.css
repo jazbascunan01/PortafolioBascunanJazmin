@@ -7,10 +7,14 @@
     /* Color oscuro */
     height: 80px;
     /* Ajusta la altura de la barra de navegación */
-    border-bottom: 4px solid #2671a3;
+    border-bottom: 4px solid #1f9981;
+    /* border-bottom: 4px solid #2671a3; */
     padding: 2% 10% 2% 5%;
 }
 
+.navbar-expand-lg .navbar-collapse {
+    height: 100%;
+}
 .navbar-brand img {
     max-width: 60px;
     /* Ajusta el tamaño máximo de la imagen del logo */
@@ -32,12 +36,13 @@
 .navbar-nav .nav-link:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
     background-color: rgb(22, 44, 59);
+    background-color: #0c4b3f;
     /* background-color: #2671a3; */
     transform: scale(1.1);
     /* agranda la imagen al hacer hover */
     filter: brightness(1.5);
     /* resalta la imagen al hacer hover */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     color: #28a745;
     /* Cambia de color al pasar el mouse */
 }
@@ -54,6 +59,7 @@ nav {
 
 .navbar-nav ml-auto {
     margin: 0%;
+    height: 90%;
 }
 
 .logojb {
@@ -151,7 +157,8 @@ nav {
 .avatar {
     width: 80%;
     border-radius: 50%;
-    background-color: #b6c6f9;
+    background-color: #2d4440;
+    /* background-color: #b6c6f9; */
     padding: 2%;
 }
 
@@ -164,7 +171,10 @@ nav {
 }
 
 #habilidades {
-    background-image: linear-gradient(to bottom right, #2b384e, #020137);
+    background-image: linear-gradient(to bottom right, #29364d, #010110);
+   /*  background-image: linear-gradient(to bottom right, #29364d, #0c0c12); */
+    /* background-image: linear-gradient(to bottom right, #29364d, #000000); */
+    /* background-image: linear-gradient(to bottom right, #2b384e, #020137); */
     /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
@@ -216,10 +226,11 @@ p {
 }
 
 #proyectos {
-    background-color: #3498db;
     margin: 0;
-    background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
-    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
+/*     background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5); */
+    background-image: linear-gradient(to bottom right, #091941, #212333);
+    box-shadow: inset 0 0 1000px rgba(0, 10, 0, 10);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -251,7 +262,15 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
+   /*  background-image: linear-gradient(to bottom right, #394a67, #013337); */
+   /* background-image: linear-gradient(to bottom right, #112d5e, #292c3f);
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5); */
+    background-image: linear-gradient(to bottom right, #0f2957, #292c3f);
+    box-shadow: inset 0 0 200px rgba(0, 0.5, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgb(101 206 164 / 25%);
+    box-shadow: 7px 13px 37px #000;
     align-items: center;
     border-radius: 5%;
     margin: 2%;
@@ -266,7 +285,8 @@ p {
 
 .color {
     /* color: #b90303; */
-    color: #294cad;
+    /* color: #294cad; */
+    color: #1CB698;
 }
 
 .descripcion_proyecto {
@@ -287,7 +307,8 @@ p {
 
 button {
     /*Buttons de las páginas ADMINISTRADOR,CONTACTO, OFERTA y TURNOS*/
-    background-color: #356d7c;
+    /* background-color: #356d7c; */
+    background-color: #148f77;
     border-radius: 10px;
     color: white;
     border-color: white;
@@ -315,6 +336,7 @@ button:hover {
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    background-color: #292c3f;
 
 }
 
@@ -339,6 +361,9 @@ input {
     margin-bottom: 3%;
     border-radius: 5px;
     font-size: small;
+    background-color: transparent;
+    border: 1px solid #fff0;
+    border-bottom: 2px solid #818181;
 }
 
 #form_cargar_datos {
@@ -370,6 +395,10 @@ textarea {
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
     height: 90px;
+    background-color: transparent;
+    /* opacity: 20%; */
+    border: 1px solid #fff0;
+    border-bottom: 2px solid #959292;
 }
 
 .ubicacion {
@@ -386,10 +415,13 @@ textarea {
     /* Div contenedor del mapa de la página CONTACTO */
     height: 100%;
     width: 100%;
+    border-radius: 2%;
+    box-shadow: 2px 20px 27px #000
 }
 
 .contacto {
-    background-image: linear-gradient(to bottom right, #4b6287, #020137);
+    background-color: #212333;
+    /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
 }
@@ -734,14 +766,7 @@ article.animate {
 
     /* Estilo personalizado para la barra de navegación */
     .navbar {
-        background-color: #0f2a44;
-        /* background-color: #25394d; */
-        /* background-color: #25303b; */
-        /* background-color: #343a40; */
-        /* Color oscuro */
         height: 80px;
-        /* Ajusta la altura de la barra de navegación */
-        border-bottom: 4px solid #2671a3;
         padding: 0%;
     }
 
@@ -750,10 +775,13 @@ article.animate {
         /* Ajusta el tamaño máximo de la imagen del logo */
     }
 
+    .navbar-expand-lg .navbar-nav {
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+    }
     .navbar-brand,
     .navbar-nav .nav-link {
-        color: #ffffff;
-        /* Texto blanco */
         font-size: 18px;
         /* Tamaño del texto */
     }
@@ -761,20 +789,9 @@ article.animate {
     .navbar-nav .nav-link {
         transition: transform 3s, filter 3s;
         border-radius: 5px;
+        height: 100%;
     }
 
-    .navbar-nav .nav-link:hover {
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
-        background-color: rgb(22, 44, 59);
-        /* background-color: #2671a3; */
-        transform: scale(1.1);
-        /* agranda la imagen al hacer hover */
-        filter: brightness(1.5);
-        /* resalta la imagen al hacer hover */
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
-        color: #28a745;
-        /* Cambia de color al pasar el mouse */
-    }
 
     .nav-link {
         padding: 16px 8px 16px 8px;
@@ -788,11 +805,13 @@ article.animate {
 
     .navbar-nav ml-auto {
         margin: 0%;
+        height: 100%;
     }
 
     .logojb {
-        margin: 1%;
-        height: 90%;
+        /* margin: 1%; */
+        height: 80%;
+        margin: 0% 1%;
     }
 
     #inicio h1 {
@@ -800,16 +819,7 @@ article.animate {
     }
 
     #inicio {
-        background-image: url('../images/hacer-curso-carrera-programador.avif');
-        background-size: cover;
-        background-position: center;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        /* Color del texto en el div */
         text-align: center;
         overflow: hidden;
         /* Para ocultar el texto que se desborda durante la animación */
@@ -829,28 +839,13 @@ article.animate {
         height: 50px;
     }
 
-    #sobre-mi,
-    .sobre-mi {
-        background-color: #3498db;
-        margin: 0;
-        background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
-        box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        color: white;
-        justify-content: space-evenly;
-    }
+
 
     .sobre-mi {
-        background-color: #3498db;
         margin: 0;
-        background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
-        box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
         padding: 20px;
         display: flex;
         flex-direction: row;
-        color: white;
         justify-content: space-evenly;
         width: 100%;
         height: 100%;
@@ -884,7 +879,6 @@ article.animate {
     .avatar {
         width: 30%;
         border-radius: 50%;
-        background-color: #b6c6f9;
         padding: 2%;
     }
 
@@ -896,12 +890,6 @@ article.animate {
         text-align: justify;
     }
 
-    #habilidades {
-        background-image: linear-gradient(to bottom right, #2b384e, #020137);
-        /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
-        /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
-        color: white;
-    }
 
     h2 {
         padding: 2%;
@@ -942,14 +930,10 @@ article.animate {
     }
 
     #proyectos {
-        background-color: #3498db;
         margin: 0;
-        background-image: linear-gradient(to bottom right, #1d1c45, #243d4e);
-        box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
         padding: 20px;
         display: flex;
         flex-direction: column;
-        color: white;
     }
 
     #mis_proyectos {
@@ -976,7 +960,6 @@ article.animate {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-image: linear-gradient(to bottom right, #4b6287, #020137);
         align-items: center;
         border-radius: 5%;
     }
@@ -988,10 +971,6 @@ article.animate {
         border-radius: 2%;
     }
 
-    .color {
-        /* color: #b90303; */
-        color: #294cad;
-    }
 
     .descripcion_proyecto {
         margin-left: 2.5%;
@@ -1011,34 +990,24 @@ article.animate {
 
     button {
         /*Buttons de las páginas ADMINISTRADOR,CONTACTO, OFERTA y TURNOS*/
-        background-color: #356d7c;
         border-radius: 10px;
-        color: white;
-        border-color: white;
     }
 
-    button:hover {
-        cursor: pointer;
-        background-color: #19213e;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
-    }
 
     .img_button {
         width: 80%;
     }
 
     .contenedor {
-        /*Gran contenedor para los forms de cada página*/
+        /*Gran contenedor para forms */
         width: 70%;
         padding: 30px;
-        background: #2e3f4f;
+       
         margin: auto;
         margin-top: 1%;
         margin-bottom: 5%;
         border-radius: 4px;
         font-family: 'calibri';
-        color: white;
-        box-shadow: 7px 13px 37px #000;
 
     }
 
@@ -1058,7 +1027,6 @@ article.animate {
     input {
         /*Inputs de las páginas ADMINISTRADOR, CONTACTO y TURNOS*/
         width: 100%;
-        color: black;
         margin-top: 2%;
         margin-bottom: 3%;
         border-radius: 5px;
@@ -1087,7 +1055,6 @@ article.animate {
     textarea {
         /* Para la página de ADMINISTRADOR y CONTACTO */
         width: 100%;
-        color: black;
         margin-top: 2%;
         margin-bottom: 3%;
         border-radius: 5px;
@@ -1110,11 +1077,6 @@ article.animate {
         width: 95%;
     }
 
-    .contacto {
-        background-image: linear-gradient(to bottom right, #4b6287, #020137);
-        /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
-        color: white;
-    }
 
     .cont_contacto {
         color: white;
