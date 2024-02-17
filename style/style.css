@@ -12,7 +12,9 @@
     /* border-bottom: 4px solid #2671a3; */
     padding: 2% 10% 2% 5%;
     width: 100%;
+    position: sticky; /* Agregamos esta línea */
 }
+
 
 .navbar-expand-lg .navbar-collapse {
     height: 100%;
