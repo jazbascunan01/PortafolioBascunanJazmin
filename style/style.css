@@ -179,7 +179,9 @@ nav {
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
 }
-
+article{
+    width: 100%;
+}
 h2 {
     padding: 2%;
     font-size: larger;
