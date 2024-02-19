@@ -226,3 +226,31 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.removeChild(enlaceTemporal);
     });
 }); 
+document.addEventListener("DOMContentLoaded", function () {
+    let menuVisible = false;
+    
+    function mostrarOcultarMenu(){
+        if(menuVisible){
+            document.getElementById("nav").classList.remove("responsive");
+            menuVisible = false;
+        }else{
+            document.getElementById("nav").classList.add("responsive");
+            menuVisible = true;
+        }
+    }
+    
+    function seleccionar(){
+        document.getElementById("nav").classList.remove("responsive");
+        menuVisible = false;
+    }
+
+    // Agregar evento de clic al elemento nav-responsive
+    document.querySelector(".nav-responsive").addEventListener("click", mostrarOcultarMenu);
+
+    // Agregar evento de clic a los enlaces de navegación
+    let enlaces = document.querySelectorAll("#nav ul li a");
+    enlaces.forEach(function(enlace) {
+        enlace.addEventListener("click", seleccionar);
+    });
+});
+
