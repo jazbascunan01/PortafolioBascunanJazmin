@@ -429,6 +429,7 @@ button:hover {
     cursor: pointer;
     background-color: #19213e;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Agrega una sombra */
 }
 
 .img_button {
