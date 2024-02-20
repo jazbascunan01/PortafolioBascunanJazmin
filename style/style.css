@@ -25,13 +25,16 @@ html {
     /* background: #1e2326; */
     /* background: #15252f; */
     background-color: #242637;
-    border-bottom: 4px solid #1f9981;
+    /* border-bottom: 4px solid #1f9981; */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
     height: 80px;
+    background-color: #242637;
+    /* box-shadow: 0 0 5px rgb(144 162 166 / 70%); */
+    box-shadow: 0 0 15px rgb(50 255 230 / 70%);
 }
 
 .logoj {
@@ -79,19 +82,27 @@ html {
     align-items: center;
     transition: transform 3s, filter 3s;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .contenedor-header header nav ul li a:hover {
     /* color: #1CB698 !important; */
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+/*     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
     background-color: rgb(22, 44, 59);
     background-color: #0c4b3f;
     /* background-color: #2671a3; */
-    transform: scale(1.4) !important;
+   /*  transform: scale(1.4) !important;
     filter: brightness(1.5);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); */ 
     /* color: #28a745; */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    background-color: rgba(12, 75, 63, 0.8); /* Color de fondo semitransparente */
+    backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo */
+    transform: scale(1.4); /* Escala el tamaño del enlace al hacer hover */
+    filter: brightness(1.5); /* Ajusta el brillo de las letras */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Agrega una sombra */
 }
+
 
 .nav-responsive {
     background-color: #1CB698;
