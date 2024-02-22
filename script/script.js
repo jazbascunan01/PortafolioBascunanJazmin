@@ -106,6 +106,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+
+    // Añadimos un listener de evento para cada enlace del menú
+    const menuLinks = document.querySelectorAll('#nav a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Evitamos el comportamiento por defecto del enlace
+
+            const targetId = this.getAttribute('href'); // Obtenemos el id del objetivo del enlace
+            const targetElement = document.querySelector(targetId); // Seleccionamos el elemento objetivo
+
+            if (targetElement) {
+                const targetOffset = targetElement.offsetTop; // Obtenemos la posición del elemento objetivo
+                const currentScroll = window.pageYOffset; // Obtener posición actual del scroll
+                const distance = targetOffset - currentScroll; // Calcular la distancia
+
+                const duration = 1000; // Duración de la animación en milisegundos
+
+                smoothScrollTo(distance, duration); // Llamamos a la función de desplazamiento suave
+            }
+        });
+    });
+
+    function smoothScrollTo(targetY, duration) {
+        const initialY = window.scrollY || window.pageYOffset;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+        function animateScroll() {
+            const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const elapsed = currentTime - startTime;
+
+            const easeInOutCubic = function (t) {
+                t /= duration / 2;
+                if (t < 1) return 1 / 2 * t * t * t;
+                t -= 2;
+                return 1 / 2 * (t * t * t + 2);
+            };
+
+            window.scrollTo(0, initialY + targetY * easeInOutCubic(elapsed));
+
+            if (elapsed < duration) {
+                requestAnimationFrame(animateScroll);
+            }
+        }
+
+        animateScroll();
+    }
+});
+
+
+
+
+
+
+
 
 
 
