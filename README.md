@@ -29,6 +29,7 @@
 
 La organización del proyecto se divide en carpetas:
 
+- `/docs`: Recursos pdf.
 - `/images`: Recursos multimedia.
 - `/style`: Archivos CSS, incluyendo `style.css` y `animate.css`.
 - `/script`: Scripts JavaScript, como `script.js` y `wow.min.js`.
@@ -37,9 +38,10 @@ La organización del proyecto se divide en carpetas:
 
 1. **Inicio**: Presentación animada con mi nombre.
 2. **Sobre Mí**: Información detallada sobre mi perfil y trayectoria académica.
-3. **Habilidades**: Desglose de habilidades técnicas con logos representativos.
-4. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
-5. **Contacto**: Formulario de contacto y ubicación en un mapa.
+3. **Educación**: Aquí detallo mi formación académica y los cursos relevantes que he completado.
+4. **Habilidades**: Desglose de habilidades técnicas con logos representativos.
+5. **Proyectos**: Galería de proyectos destacados con detalles y enlaces.
+6. **Contacto**: Formulario de contacto y ubicación en un mapa.
 
 
 ## Contacto 📬
