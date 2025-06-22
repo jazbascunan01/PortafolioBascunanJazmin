@@ -270,7 +270,7 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.btn_descargar').addEventListener('click', function () {
         // Ruta relativa al archivo PDF
-        var archivoPDF = 'docs/Curriculum Jazmín Bascuñan (3).pdf';
+        var archivoPDF = 'docs/Curriculum Jazmín Bascuñan (2).pdf';
 
         // Crea un elemento de enlace temporal
         var enlaceTemporal = document.createElement('a');
