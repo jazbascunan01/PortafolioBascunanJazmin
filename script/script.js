@@ -1,7 +1,9 @@
 /* document.addEventListener("DOMContentLoaded", function () { */
 var frases = [
-    "Desarrollo Web",
+    "Desarrollo Backend",
     "Desarrollo Fullstack",
+    "Desarrollo Frontend",
+    "Desarrollo Web",
 ];
 
 var animacionTexto = document.getElementById('animacion-texto');
