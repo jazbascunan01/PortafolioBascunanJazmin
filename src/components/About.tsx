@@ -41,11 +41,12 @@ export default function About() {
                     </h5>
                 </section>
             </div>
-            {/* Asegúrate de que tu CV esté en la carpeta public/docs/CV.pdf */}
-            <button onClick={handleDownload} className="btn_descargar">
-                {/*<Image className="img_button ocultar" src="/images/image (43).png" alt="Descargar" width={20} height={20} />*/}
-                Descargar CV
-            </button>
+            <div className="download-cv-container">
+                <button onClick={handleDownload} className="btn_descargar">
+                    <i className="fa-solid fa-download"></i>
+                    Descargar CV
+                </button>
+            </div>
         </article>
     );
 }

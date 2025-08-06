@@ -260,24 +260,8 @@ nav {
     /* Simula el cursor de escritura */
     max-width: min-content;
     display: inline-block;
-    min-height: 20px; /* Usamos min-height para más flexibilidad */
+    height: 20px;
     font-family: var(--font-source-code-pro);
-}
-
-/* Animación para el cursor del Hero */
-.cursor {
-    display: inline-block;
-    width: 3px; /* Un poco más grueso para mejor visibilidad */
-    height: 1em; /* Se ajusta a la altura de la fuente */
-    background-color: #1CB698;
-    margin-left: 4px;
-    vertical-align: -0.1em; /* Ajuste fino para bajar el cursor a la línea base */
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
 }
 
 #sobre-mi,
@@ -507,6 +491,28 @@ p {
     justify-content: center;
 }
 
+.download-cv-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 50px 0; /* Espaciado superior e inferior */
+}
+
+.btn_descargar {
+    background-color: transparent;
+    border: 2px solid #1CB698;
+    color: #1CB698;
+    padding: 12px 24px;
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
 .btn_proy {
     margin: 2.5%;
 }
@@ -528,10 +534,10 @@ button {
     border-color: white;
 }
 
-button:hover {
+button:hover, .btn_descargar:hover {
     cursor: pointer;
-    background-color: #19213e;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    background-color: #1CB698;
+    color: #0f172a;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     /* Agrega una sombra */
 }
@@ -889,7 +895,7 @@ article.animate {
 
     #animacion-texto {
         font-size: 20px;
-        min-height: 30px;
+        height: 30px;
     }
 }
 
@@ -1065,7 +1071,7 @@ article.animate {
         /* Simula el cursor de escritura */
         max-width: min-content;
         display: inline-block;
-        min-height: 50px;
+        height: 50px;
     }
 
 
