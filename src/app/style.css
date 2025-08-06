@@ -464,6 +464,12 @@ p {
     align-items: center;
     border-radius: 5%;
     margin: 2%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.4), 0 0 20px rgb(101 206 164 / 40%);
 }
 
 .img_proyect {
@@ -1534,6 +1540,101 @@ article.animate {
     /* Ajusta otros estilos según tus preferencias   */
 }
 
+/* === NUEVOS ESTILOS PARA TARJETAS DE PROYECTO === */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.proyecto {
+    background: #1e293b; /* Un color de fondo ligeramente más claro */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #334155;
+    width: auto;
+}
+
+.project-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Altura fija para la imagen */
+}
+
+.project-image {
+    transition: transform 0.4s ease;
+}
+
+.proyecto:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+}
+
+.project-title {
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-family: var(--font-lato);
+    color: #94a3b8; /* Un gris más suave para la descripción */
+    flex-grow: 1; /* Empuja los tags y botones hacia abajo */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background-color: rgba(28, 182, 152, 0.15);
+    color: #1CB698;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-family: var(--font-source-code-pro);
+    font-size: 0.8rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; /* Asegura que los botones siempre estén al final */
+}
+
+.project-button {
+    background-color: transparent;
+    border: 1px solid #334155;
+    color: #94a3b8;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-button:hover {
+    background-color: #1CB698;
+    color: #0f172a;
+    border-color: #1CB698;
+}
 @media screen and (max-width:980px) {
     nav {
         display: none;
