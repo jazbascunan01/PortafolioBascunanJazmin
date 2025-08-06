@@ -13,9 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Jazmín Bascuñan | Portafolio",
     description: "Portafolio web de Jazmín Bascuñan, Desarrolladora de Aplicaciones Informáticas.",
-    icons: {
-        icon: '/images/image-_3_.ico',
-    }
 };
 export default function RootLayout({
   children,
