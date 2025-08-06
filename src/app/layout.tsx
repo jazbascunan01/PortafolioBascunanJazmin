@@ -31,11 +31,7 @@ export default function RootLayout({
               crossOrigin="anonymous" referrerPolicy="no-referrer"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
         {/*<link rel="icon" href="images/image-_3_.ico"/>*/}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     </head>
     <body className={inter.className}>
 
