@@ -6,6 +6,7 @@ import Image from 'next/image';
 export default function Header() {
     const [menuVisible, setMenuVisible] = useState(false);
     const [activeLink, setActiveLink] = useState('inicio');
+    const [scrolled, setScrolled] = useState(false);
 
     // Función para mostrar/ocultar el menú en móviles
     const handleMenuToggle = () => {
@@ -42,6 +43,17 @@ export default function Header() {
         };
     }, []);
 
+    // Efecto para el fondo del header al hacer scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const navLinks = [
         { href: '#inicio', label: 'INICIO' },
         { href: '#sobre-mi', label: 'SOBRE MÍ' },
@@ -52,7 +64,7 @@ export default function Header() {
     ];
 
     return (
-        <div className="contenedor-header">
+        <div className={`contenedor-header ${scrolled ? 'scrolled' : ''}`}>
             <header>
                 <div className="logoj">
                     <Image className="logojb" src="/images/image (44).png" alt="Logo JB" width={70} height={70} />
