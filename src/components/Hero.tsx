@@ -47,7 +47,7 @@ export default function Hero() {
                 <h1><span className="color">&lt;</span>Jazmín Bascuñan<span className="color">/&gt;</span></h1>            </div>
             <div id="animacion-texto" data-aos="fade-up" data-aos-delay="500">
                 {texto}
-                <span className="cursor">|</span>
+                <span className="cursor"></span>
             </div>
         </article>
     );

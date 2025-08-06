@@ -260,8 +260,24 @@ nav {
     /* Simula el cursor de escritura */
     max-width: min-content;
     display: inline-block;
-    height: 20px;
+    min-height: 20px; /* Usamos min-height para más flexibilidad */
     font-family: var(--font-source-code-pro);
+}
+
+/* Animación para el cursor del Hero */
+.cursor {
+    display: inline-block;
+    width: 3px; /* Un poco más grueso para mejor visibilidad */
+    height: 1em; /* Se ajusta a la altura de la fuente */
+    background-color: #1CB698;
+    margin-left: 4px;
+    vertical-align: -0.1em; /* Ajuste fino para bajar el cursor a la línea base */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 #sobre-mi,
@@ -873,7 +889,7 @@ article.animate {
 
     #animacion-texto {
         font-size: 20px;
-        height: 30px;
+        min-height: 30px;
     }
 }
 
@@ -1049,7 +1065,7 @@ article.animate {
         /* Simula el cursor de escritura */
         max-width: min-content;
         display: inline-block;
-        height: 50px;
+        min-height: 50px;
     }
 
 
