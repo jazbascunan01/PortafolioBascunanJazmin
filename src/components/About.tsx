@@ -6,7 +6,7 @@ export default function About() {
         // Creamos un enlace temporal en memoria
         const link = document.createElement('a');
         // Le asignamos la ruta del archivo (debe estar en la carpeta /public)
-        link.href = '/docs/CV.pdf';
+        link.href = '/docs/Curriculum Jazmín Bascuñan (2).pdf';
         // Le asignamos el nombre que tendrá el archivo al descargarse
         link.download = 'CV_Jazmin_Bascunan.pdf';
         // Añadimos el enlace al cuerpo del documento

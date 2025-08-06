@@ -1,8 +1,30 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: var(--font-source-code-pro);
+}
+body{
+    font-family: var(--font-lato); /* Fuente base para tdo el cuerpo */
+}
+.skills-container {
+    width: 100%;
+    padding: 0 5%;
+    font-family: var(--font-source-code-pro);
 }
 
+.skill-group {
+    margin-bottom: 40px;
+}
+
+.skill-subtitle {
+    font-family: var(--font-poppins);
+    color: #1CB698;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #2d3748;
+    padding-bottom: 10px;
+}
 /* Estilo personalizado para la barra de navegación */
 .navbar {
     background-color: #242637;
@@ -92,6 +114,7 @@ html {
     color: #caf6f0;
     text-decoration: none;
     transition: color 0.2s;
+    font-family: var(--font-poppins);
 }
 
 .contenedor-header header nav ul li a::after {
@@ -207,6 +230,7 @@ nav {
 
 #inicio h1 {
     font-size: 20px;
+    font-family: var(--font-poppins);
 }
 
 #inicio {
@@ -237,6 +261,7 @@ nav {
     max-width: min-content;
     display: inline-block;
     height: 20px;
+    font-family: var(--font-source-code-pro);
 }
 
 #sobre-mi,
@@ -314,6 +339,7 @@ nav {
     /* background-image: linear-gradient(to bottom right, #4b6287, #020137); */
     /*  background-image: linear-gradient(to bottom right, #6792ae,#050443); */
     color: white;
+    padding-bottom: 50px;
 }
 
 article {
@@ -324,14 +350,18 @@ h2 {
     padding: 2%;
     font-size: larger;
     text-align: center;
+    font-family: var(--font-poppins);
 }
 
 h4 {
     font-size: 10px;
+    font-family: var(--font-poppins);
 }
 
 h5 {
     font-size: small;
+    font-family: var(--font-lato);
+    font-weight: 400;
 }
 
 .ocultar {
@@ -340,6 +370,7 @@ h5 {
 
 p {
     font-size: xx-small;
+    font-family: var(--font-lato);
 }
 
 .logos_habilidades {
@@ -365,6 +396,7 @@ p {
     /*transition: transform 3s, filter 3s, box-shadow 3s;*/
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     /* agrega una transición suave */
+    font-family: var(--font-source-code-pro); /* Fuente de código para los brackets */
 }
 .foto_menu:hover {
     transform: scale(1.5)!important;
@@ -449,6 +481,7 @@ p {
 .descripcion_proyecto {
     margin-left: 2.5%;
     margin-right: 2.5%;
+    font-family: var(--font-lato);
 }
 
 .botones_proyectos {

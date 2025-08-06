@@ -3,12 +3,29 @@ import { Inter } from "next/font/google";
 //import "./globals.css";
 import "./style.css";
 import "./animate.css";
+import { Poppins, Lato, Source_Code_Pro } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 //import ClientSideSetup from "@/components/ClientSideSetup";
 import AOSLoader from "@/components/AOSLoader";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-poppins',
+});
+
+const lato = Lato({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-lato',
+});
+
+const sourceCodePro = Source_Code_Pro({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-source-code-pro',
+});
 
 export const metadata: Metadata = {
     title: "Jazmín Bascuñan | Portafolio",
@@ -30,8 +47,7 @@ export default function RootLayout({
         {/*<link rel="icon" href="images/image-_3_.ico"/>*/}
 
     </head>
-    <body className={inter.className}>
-
+    <body className={`${poppins.variable} ${lato.variable} ${sourceCodePro.variable}`}>
 
     <Header/>
     <main>
