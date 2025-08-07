@@ -53,12 +53,14 @@ body{
     left: 0;
     z-index: 99;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
+
 }
 
 .contenedor-header.scrolled {
     background-color: rgba(15, 23, 42, 0.85); /* Fondo oscuro semitransparente */
     backdrop-filter: blur(10px); /* Efecto de desenfoque para navegadores modernos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgb(50 255 230 / 70%);
 }
 
 .logoj {
