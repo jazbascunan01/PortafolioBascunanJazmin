@@ -3,22 +3,12 @@
 import Image from 'next/image';
 
 const projectsData = [
-  // Primera fila de proyectos
   {
-    title: "Web de Cruceros",
-    description: 'Sistema web informativo de tours en cruceros, utilizando modelo MVC, PHP, CSS, JS y Smarty para la gestión de plantillas.',
-    image: '/images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg',
-    tags: ["PHP", "Smarty", "JavaScript", "MVC"],
-    liveUrl: 'https://oceandream.000webhostapp.com//home',
-    repoUrl: 'https://github.com/jazbascunan01/cruceros',
-  },
-  {
-    title: "API de Cruceros",
-    description: 'API RESTful para el sistema de cruceros. Implementa el modelo MVC para una arquitectura limpia y escalable en PHP.',
-    image: '/images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg',
-    tags: ["PHP", "API REST", "MVC"],
-    liveUrl: null,
-    repoUrl: 'https://github.com/jazbascunan01/Cruceros_api',
+    title: "API REST de aplicación de monopatines",
+    description: 'Proyecto de Backend desarrollado de manera académica en equipo. Permite gestionar monopatines, paradas, cuentas, usuarios, viajes, facturas, obtener reportes, etc',
+    image: '/images/monopatines.jpg',
+    tags: ["Java", "Spring", "Hibernate", "Maven","JWT", "Groq", "JPQL", "MySQL"],
+    repoUrl: 'https://github.com/BautistaSerqueiraFucile/TP_Integrador-Grupo-B-.git',
   },
   {
     title: "Paint en JS",
@@ -43,6 +33,29 @@ const projectsData = [
     tags: ["HTML", "CSS", "UX/UI"],
     liveUrl: 'https://jazbascunan01.github.io/CAAN_NECOCHEA/',
     repoUrl: 'https://github.com/jazbascunan01/CAAN_NECOCHEA.git',
+  },
+  {
+    title: "TODO List",
+    description: 'Proyecto de FullStack desarrollado como parte del Challenge de ingreso a la Academia ForIT 2025. Permite crear, ver, editar y eliminar tareas utilizando una arquitectura basada en frontend (React) y backend (Node.js con Express).',
+    image: '/images/taskList.png',
+    tags: ["React", "Express", "Node.js", "TypeScript","HTML", "CSS"],
+    repoUrl: 'https://github.com/jazbascunan01/TO_DO_List.git',
+  },
+  {
+    title: "Web de Cruceros",
+    description: 'Sistema web informativo de tours en cruceros, utilizando modelo MVC, PHP, CSS, JS y Smarty para la gestión de plantillas.',
+    image: '/images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg',
+    tags: ["PHP", "Smarty", "JavaScript", "MVC"],
+    liveUrl: 'https://oceandream.000webhostapp.com//home',
+    repoUrl: 'https://github.com/jazbascunan01/cruceros',
+  },
+  {
+    title: "API de Cruceros",
+    description: 'API RESTful para el sistema de cruceros. Implementa el modelo MVC para una arquitectura limpia y escalable en PHP.',
+    image: '/images/f.elconfidencial.com_original_3cf_5ed_1b1_3cf5ed1b1140b545d252ab90a510122e.jpg',
+    tags: ["PHP", "API REST", "MVC"],
+    liveUrl: null,
+    repoUrl: 'https://github.com/jazbascunan01/Cruceros_api',
   },
 ];
 
