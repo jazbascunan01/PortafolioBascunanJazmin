@@ -877,7 +877,7 @@ body {
 
 article.animate {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 } */
 
 /* Ajusta otros estilos según tus preferencias   */
@@ -1250,10 +1250,50 @@ article.animate {
 
     .contenedor#contacto {
         /*Pagina CONTACTO*/
-        width: 40%!important;
-        margin: 3%!important;
+        background: transparent;
+        box-shadow: none;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
     }
-
+    #contacto input,
+    #contacto textarea {
+        width: 100%;
+        background-color: transparent;
+        color: #e2e8f0; /* Texto claro */
+        font-family: var(--font-lato);
+        font-size: 1.1rem;
+        padding: 15px 5px; /* Más padding vertical, menos horizontal */
+        margin-bottom: 30px; /* Más espacio entre campos */
+        border: none; /* Quitamos todos los bordes */
+        border-bottom: 2px solid #334155; /* Línea base sutil (gris-azulado) */
+        transition: border-color 0.3s ease;
+    }
+    #contacto input:focus,
+    #contacto textarea:focus {
+        outline: none; /* Quitamos el borde por defecto del navegador */
+        border-bottom-color: #1CB698;
+    }
+    #contacto button {
+        width: auto; /* Ancho automático basado en el contenido */
+        min-width: 200px;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        font-family: var(--font-poppins);
+        cursor: pointer;
+        background-color: transparent;
+        color: #1CB698;
+        border: 2px solid #1CB698;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    #contacto button:hover {
+        background-color: #1CB698;
+        color: #0f172a; /* El color de fondo oscuro del body */
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(28, 182, 152, 0.2);
+    }
     .datos_form {
         /* Sections de la página CONTACTO */
         display: flex;
@@ -1528,7 +1568,7 @@ article.animate {
 
 article.animate {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 } */
 
     /* Ajusta otros estilos según tus preferencias   */
