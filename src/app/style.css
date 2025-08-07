@@ -536,6 +536,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 2s ease, color 0.5s ease, box-shadow 0.5s ease;
+
 }
 
 button {
@@ -545,6 +547,8 @@ button {
     border-radius: 10px;
     color: white;
     border-color: white;
+    transition: background-color 2s ease, color 0.5s ease, box-shadow 0.5s ease;
+
 }
 
 button:hover, .btn_descargar:hover {
@@ -553,6 +557,7 @@ button:hover, .btn_descargar:hover {
     color: #0f172a;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     /* Agrega una sombra */
+
 }
 
 .img_button {
