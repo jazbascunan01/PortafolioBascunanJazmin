@@ -4509,3 +4509,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #__next-build-watcher {
     display: none !important;
 }
+/* === Estilos para el cursor de escritura en el Hero === */
+#animacion-texto .cursor {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #1CB698; /* Color del cursor, igual que tu acento */
+    margin-left: 5px;
+    width: 2px;
+    height: 1em; /* Altura relativa al tamaño de la fuente */
+    animation: blink 1s infinite;
+}
+
+/* Animación de parpadeo para el cursor */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
